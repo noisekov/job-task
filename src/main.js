@@ -55,4 +55,14 @@ dropdown.forEach(dropwrapper => {
     })
 })
 
+//range
+const valueRange = document.querySelector('.range__value');
+const range = document.querySelector('.range__input');
+
+range.addEventListener('input', howManyPercent);
+
+function howManyPercent () {
+    valueRange.textContent = `${range.value} %`;
+}
+
 
