@@ -27,7 +27,7 @@ body {
 }
 .overlay-image {
     background-image: url(../images/bg.jpg);
-    background-position: -200px 0;
+    background-position: center
 }
 .header {
 	background: rgba(16, 16, 29, 0.9);
@@ -328,7 +328,11 @@ body {
 .range {
     width: 100%;
 }
+.form-order__range-btn-input {
+    display: none;
+}
 .form-order__range-btn {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,6 +344,7 @@ body {
     max-width: 370px;
     height: 48px;
     position: relative;
+    background: #fff;
     &::before {
         content: '';
         display: inline-flex;
